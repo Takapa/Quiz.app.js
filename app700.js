@@ -1,16 +1,24 @@
 const quiz = [
   {
-    question: '入手可能',
-    answer: ['available','conference','equipment','refer'],
-    correct: 'available'
+    question: '長期の',
+    answer: ['extended','defective','quarterly','affodable'],
+    correct: 'extended'
   },{
-    question: '経費',
-    answer: ['profit','launch','entry','expense'],
-    correct: 'expense'
+    question: '認定証',
+    answer: ['guidelines','certificate','agenda','assembly'],
+    correct: 'certificate'
   },{
-    question: '前の、かつての',
-    answer: ['modern','specific','former','agricultural'],
-    correct: 'former'
+    question: '設置する ',
+    answer: ['inspect','relocate','expire','install'],
+    correct: 'install'
+  },{
+    question: '評価する',
+    answer: ['evaluate','negotiate','relevant','via'],
+    correct: 'evaluate'
+  },{
+    question: '宿泊施設',
+    answer: ['refreshment','accommodations','revenue','preference'],
+    correct: 'accommodations'
   }
 ]
 
@@ -50,6 +58,9 @@ const clickHandlar = (e) => {
     setupQuiz();
   }else{
     window.alert('終了!!あなたの正解数は' + score + '/' + quizLength + 'です')
+
+    window.location.href = 'home.html';
+
   }
 
 };
